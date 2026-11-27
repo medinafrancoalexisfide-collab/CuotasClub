@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CuotasClub/CuotasClub.csproj" />
+    <Project Path="src/CuotasClub.Core/CuotasClub.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CuotasClub.Tests/CuotasClub.Tests.csproj" />
+  </Folder>
+</Solution>

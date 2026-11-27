@@ -1,0 +1,45 @@
+# ── Compilación ──────────────────────────────
+bin/
+obj/
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+TestResults/
+*.log
+
+# ── Datos reales (NUNCA al repositorio) ──────
+# Base de datos con alumnos, pagos y teléfonos
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+*.bak
+# Copias de seguridad y recibos generados
+Backups/
+Copias/
+Recibos/
+*-antes-de-restaurar*
+
+# ── Credenciales (son como una contraseña) ───
+credenciales-google.json
+credenciales*.json
+*.credentials.json
+client_secret*.json
+service-account*.json
+*-key.json
+.env
+.env.*
+*.pfx
+*.p12
+
+# ── Instalador y paquetes (van en Releases) ──
+publicado/
+salida/
+programa/
+*.zip
+*.exe
+*.msi

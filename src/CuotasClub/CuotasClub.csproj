@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>CuotasClub</RootNamespace>
+    <AssemblyName>CuotasClub</AssemblyName>
+    <!-- Permite compilar el proyecto Windows desde Linux/macOS (CI). En Windows no cambia nada. -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <!-- Nitidez en pantallas con zoom (125 %, 150 %): las ventanas se agrandan en VentanaBase. -->
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <Version>1.0.0</Version>
+    <ApplicationIcon>Recursos\CuotasClub.ico</ApplicationIcon>
+    <!-- Solo los textos en español de .NET: el instalador queda más chico. -->
+    <SatelliteResourceLanguages>es</SatelliteResourceLanguages>
+    <Product>CuotasClub</Product>
+    <ApplicationDefaultFont>Segoe UI, 10pt</ApplicationDefaultFont>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- La guía de Google Sheets viaja con el programa: Configuración la abre con "Ver los pasos". -->
+    <None Include="..\..\docs\CONECTAR-GOOGLE-SHEETS.md" Link="docs\CONECTAR-GOOGLE-SHEETS.md" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CuotasClub.Core\CuotasClub.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.13" />
+    <PackageReference Include="Google.Apis.Sheets.v4" Version="1.78.0.4330" />
+    <PackageReference Include="QuestPDF" Version="2026.9.2" />
+  </ItemGroup>
+</Project>
