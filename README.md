@@ -64,9 +64,7 @@ instalador/           Scripts de instalación (PowerShell) e Inno Setup
 
 ## Probarlo
 
-**Como usuario:** descargá el instalador desde [Releases](../../releases) y seguí [docs/INSTALAR.md](docs/INSTALAR.md). Arranca vacío y te pide los datos de tu club.
-
-**Como desarrollador:** con el SDK de .NET 10,
+Con el SDK de .NET 10:
 
 ```bash
 dotnet build CuotasClub.slnx
