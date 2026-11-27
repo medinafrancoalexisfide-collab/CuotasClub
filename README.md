@@ -64,7 +64,9 @@ instalador/           Scripts de instalación (PowerShell) e Inno Setup
 
 ## Probarlo
 
-Con el SDK de .NET 10:
+**Como usuario (Windows 10/11):** descargá `Instalar-CuotasClub-1.0.zip` desde la [última versión](https://github.com/medinafrancoalexisfide-collab/CuotasClub/releases/latest) y seguí [docs/INSTALAR.md](docs/INSTALAR.md). No hace falta instalar .NET; arranca vacío y te pide los datos de tu club.
+
+**Como desarrollador:** con el SDK de .NET 10,
 
 ```bash
 dotnet build CuotasClub.slnx

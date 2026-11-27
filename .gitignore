@@ -36,7 +36,7 @@ service-account*.json
 *.pfx
 *.p12
 
-# ── Instalador y paquetes (no van al repo) ──
+# ── Instalador y paquetes (van en Releases) ──
 publicado/
 salida/
 programa/
